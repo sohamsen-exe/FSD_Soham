@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Instagram Login</title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url(./instagram_background.jpg);
+                background-size: cover;
+            }
+            img{
+                padding-top: 60px;
+                padding-left: 60px;
+                padding-right: 60px;
+                padding-bottom: 20px;
+                display: block;
+                width: 240px;
+                height: 90px;
+            }
+            fieldset{
+                padding: 20px;
+                padding-bottom: 60px;
+                justify-content: center;
+                border-radius: 10px;
+                background-color: white;
+            }
+            input{
+                border-radius: 5px;
+                text-align: center;
+                padding: 8px;
+                border-width: 1px;
+            }
+            input:hover{
+                border-color: hotpink;
+            }
+            .i1{
+                margin-left: 30px;
+                width: 84%;
+            }
+            .i2{
+                margin-left: 30px;
+                width: 84%;
+            }
+            button{
+                border-radius: 5px;
+                margin-left: 30px;
+                padding: 10px;
+                display: block;
+                width: 84%;
+                background-color: hotpink;
+                border: none;
+            }
+            button:hover{
+                background-color: hotpink;
+                color: white;
+            }
+            .signup{
+                border-radius: 5px;
+                margin-left: 130px;
+                padding: 10px;
+                display: block;
+                width: 100px;
+                background-color: #0081FB;
+                border: none;
+            }
+            .signup:hover{
+                background-color: lightskyblue;
+                color: white;
+            }
+            .P1{
+                margin-left: 125px;
+                margin-top: 15px;
+            }
+            .P2{
+                text-align: center;
+                margin-top: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <img src = './Instagram_logo.svg.png'>
+                <input class = 'i1' type="text" placeholder="Enter Username/Email" required>
+                <br><br>
+                <input class = 'i2' type="password" placeholder="Enter Password" required>
+                <br><br>
+                <button type="submit">Login</button>
+                <br>
+                <label class = 'P1'><a href="#">Forgot password?</a></label>
+                <br><br>
+                <hr>
+                <p class = 'P2'>Don't have an account?</p> <button class = 'signup'>Sign Up</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

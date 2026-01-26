@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Facebook Login</title>
+        <style>
+            body{
+                display: flex;
+                margin-left: 1330px;
+                margin-top: 400px;
+                background-image: url('./facebook_helps_you_connect.jpg');
+                background-position: 0% 44%;
+                background-size: cover;
+            }
+            fieldset{
+                padding: 15px;
+                justify-content: center;
+                background-color: white;
+                padding: 20px;
+                border-width: 0px;
+                border-color: grey;
+                box-shadow: 2px 2px 40px grey;
+            }
+            input{
+                padding: 8px;
+                border-width: 1px;
+            }
+            input:hover{
+                border-color: blue;
+            }
+            .I1{
+                width: 284px;
+            }
+            .I2{
+                width: 284px;
+            }
+            .login{
+                border-radius: 5px;
+                font-weight: bold;
+                padding: 10px;
+                display: block;
+                width: 284px;
+                background-color: #1877f2;
+                border: none;
+                color: white;
+            }
+            .login:hover{
+                background-color: #0a66c2;
+            }
+            .newacc{
+                border-radius: 5px;
+                font-weight: bold;
+                padding: 10px;
+                display: block;
+                width: 284px;
+                background-color: #36a420;
+                border: none;
+                color: white;
+            }
+            .newacc:hover{
+                background-color: green;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <input class = 'I1' type="text" placeholder="Email address or phone number" required>
+                <br><br>
+                <input class = 'I2' type="password" placeholder="Password" required>
+                <br><br>
+                <button class = 'login' type = "submit">Log In</button>
+                <p style="text-align: center; color: #1877f2;">Forgotten Password</p><hr>
+                <br>
+                <button class = 'newacc'>Create New Account</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

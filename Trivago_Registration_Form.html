@@ -1,0 +1,181 @@
+<html>
+    <head>
+        <title>Travel Registration Form</title> 
+        <style>
+            body{
+                background-image: url('./trivago-summer-trends-1.77.png');
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            img{
+                display: block;
+                margin-left: 27px;
+                width: 560px;
+                height: 175px;
+            }
+            fieldset{
+                margin-top: 60px;
+                padding: 20px;
+                padding-top: 30px;
+                justify-content: center;
+                border-radius: 10px;
+                box-shadow: 2px 2px 40px grey;
+                background-color: white;
+            }
+            select{
+                text-align: center;
+                margin-left: 43px;
+                margin-bottom: 10px;
+                width: 515px;
+                padding: 8px;
+            }
+            form{
+                align-items: center;
+            }
+            input{
+                margin-left: 10px;
+                margin-right: 10px;
+                padding: 8px;
+            }
+            .input{
+                width: 190px;
+            }
+            .t1{
+                margin-left: 255px;
+            }
+            .l1 , .i1{
+                margin-left: 43px;
+                margin-bottom: 10px;
+            }
+            .l2{
+                margin-left: 43px;
+            }
+            .i2{
+                margin-left: 47px;
+                width : 428px;
+            }
+            .l2 , .i2{
+                margin-bottom: 10px;
+            }
+            .l3{
+                margin-left: 43px;
+            }
+            .i3{
+                margin-left: 10px;
+                width : 428px;
+            }
+            .l3 , .i3{
+                margin-bottom: 10px;
+            }
+            .l4{
+                margin-left: 43px;
+            }
+            .l4 , .i4{
+                margin-bottom: 10px;
+            }
+            .i4{
+                width : 430px;
+            }
+            .l5{
+                margin-left: 43px;
+            }
+            .l5 , .i5{
+                margin-bottom: 10px;
+            }
+            .r1{
+                margin-left: 27px;
+            }
+            .l6{
+                margin-left: 43px;
+            }
+            .l6 , .i6{
+                margin-bottom: 10px;
+            }
+            .i6{
+                width : 431px;
+                margin-left: 48px;
+            }
+            .l7{
+                margin-left: 43px;
+            }
+            .l7 , .i7{
+                margin-bottom: 10px;
+            }
+            .i7{
+                width : 432px;
+            }
+            .l8{
+                margin-left: 43px;
+            }
+            .l8 , .i8{
+                margin-bottom: 10px;
+            }
+            .i8{
+                width : 433px;
+                margin-left: 34px;
+            }
+            .l9{
+                margin-left: 43px;
+            }
+            .i9{
+                width : 434px;
+                margin-left:10px;
+            }
+            .l9 , .i9{
+                margin-bottom: 10px;
+            }
+            button{
+                margin-left: 43px;
+                padding: 10px;
+                display: block;
+                width: 88%;
+                background-color: greenyellow;
+                border: none;
+            }
+            button:hover{
+                background-color: green;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+            <img src = './Trivago.png'>
+            <label class = 't1'>Travel Mode:</label><br><br>
+            <select>
+                <option>--Select--</option>
+                <option>Bus</option>
+                <option>Train</option>
+                <option>Flight</option>
+            </select>
+            <br><br>
+            <label class="l1">From:</label>
+            <input class="i1" type="text" placeholder="Enter City Name" required>
+            <label>To:</label>
+            <input class = 'input' type="text" placeholder="Enter City Name" required><br><br>
+            <label class ="l2">Date:</label>
+            <input class="i2" type ="date" required><br><br>
+            <label class="l3">FirstName:</label>
+            <input class="i3" type="text" placeholder="Enter First Name" required><br><br>
+            <label class="l4">LastName:</label>
+            <input class="i4" type="text" placeholder="Enter Last Name" required><br><br>
+            <label class="l5"> Gender: </label>
+            <input class = 'r1' type="radio"  name="gender" value="Male" required>Male
+            <input type="radio" name="gender" value ="Female" required>Female
+            <input type="radio" name="gender" value ="others" required>Others<br><br>
+            <label class="l6">Age:</label>
+            <input class="i6" type="number" placeholder="Enter Age"><br><br>
+            <label class="l7">Phone No:</label>
+            <input class="i7" type="number" placeholder="Enter Phone Number" required><br><br>
+            <label class="l8">Email:</label>
+            <input class="i8" type="email" placeholder = "Enter Email" required><br><br>
+            <label class="l9">Password:</label>
+            <input class="i9" type="password" placeholder="Enter Password" required><br><br>
+            <button>Register</button>
+        </fieldset><br>
+        </form>
+    </body>
+</html>
