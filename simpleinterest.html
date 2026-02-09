@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Simple Interest Calculator</title>
+        <link rel="stylesheet" href="simpleintereststyle.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <h2>Simple Interest Calculator</h2>
+            <input type="number" id="principal" placeholder="Principal Amount">
+            <input type="number" id="rate" placeholder="Rate of Interest (%)">
+            <input type="number" id="time" placeholder="Time (years)">
+            <button onclick="calculateInterest()">Calculate</button>
+            <div class="result" id="result"></div>
+        </div>
+        <script>
+            function calculateSimpleInterest(principal, rate, time) {
+                return (principal * rate * time) / 100;
+            }
+            function calculateTotalAmount(principal, interest) {
+                return principal + interest;
+            }
+            function calculateInterest() {
+                const principal = parseFloat(document.getElementById('principal').value);
+                const rate = parseFloat(document.getElementById('rate').value);
+                const time = parseFloat(document.getElementById('time').value);
+                let result;
+                
+                if (principal < 0 || rate < 0 || time < 0) {
+                    result = 'Values cannot be negative.';
+                } else {
+                    let interest = calculateSimpleInterest(principal, rate, time);
+                    let total = calculateTotalAmount(principal, interest);
+                    result = `Interest: ${interest} | Total: ${total}`;
+                }
+                document.getElementById('result').textContent = result;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Students Marks Grading</title>
+        <link rel="stylesheet" href="GradeStyles.css">
+    </head>
+    <body>
+        <fieldset>
+            <h1>Students Marks Grading</h1>
+            <label>Registration Number: </label>
+            <br><br>
+            <input type="text" placeholder = 'Enter registration number' id = 'regno'>
+            <br><br>
+            <label>Student Name: </label>
+            <br><br>
+            <input type="text" placeholder = 'Enter student name' id = 'stdname'>
+            <br><br>
+            <label>Semester: </label>
+            <br><br>
+            <input type="text" placeholder = 'Enter semester number' id = 'sem'>
+            <br><br>
+            <label>Course: </label>
+            <br><br>
+            <input type="text" placeholder = 'Enter course name' id = 'course'>
+            <br><br>
+            <label>Marks: </label>
+            <br><br>
+            <input type="number" placeholder = 'Enter marks' id = 'marks'>
+            <br><br><br>
+            <button onclick="getMarks()">Submit</button>
+            <p id = 'result'></p>
+        </fieldset>
+
+        <script>
+            function getMarks() {
+                var regno = document.getElementById('regno').value;
+                var stdname = document.getElementById('stdname').value;
+                var sem = document.getElementById('sem').value;
+                var course = document.getElementById('course').value;
+                var marks = document.getElementById('marks').value;
+                if (marks >= 95 && marks <= 100) {
+                document.getElementById('result').innerHTML = "Registration Number: " + regno + "<br>Student Name: " + stdname + "<br>Semester: " + sem + "<br>Course: " + course + "<br>Grade: O";
+                } else if (marks >= 90 && marks < 95) {
+                    document.getElementById('result').innerHTML = "Registration Number: " + regno + "<br>Student Name: " + stdname + "<br>Semester: " + sem + "<br>Course: " + course + "<br>Grade: A+";
+                } else if (marks >= 85 && marks < 90) {
+                    document.getElementById('result').innerHTML = "Registration Number: " + regno + "<br>Student Name: " + stdname + "<br>Semester: " + sem + "<br>Course: " + course + "<br>Grade: A";
+                } else if (marks >= 80 && marks < 85) {
+                    document.getElementById('result').innerHTML = "Registration Number: " + regno + "<br>Student Name: " + stdname + "<br>Semester: " + sem + "<br>Course: " + course+ "<br>Grade: B+";
+                } else if (marks >= 75 && marks < 80) {
+                    document.getElementById('result').innerHTML = "Registration Number: " + regno + "<br>Student Name: " + stdname + "<br>Semester: " + sem + "<br>Course: " + course + "<br>Grade: B";
+                } else if (marks >= 65 && marks < 75) {
+                    document.getElementById('result').innerHTML = "Registration Number: " + regno + "<br>Student Name: " + stdname + "<br>Semester: " + sem + "<br>Course: " + course + "<br>Grade: C";
+                } else if (marks >= 50 && marks < 65) {
+                    document.getElementById('result').innerHTML = "Registration Number: " + regno + "<br>Student Name: " + stdname + "<br>Semester: " + sem + "<br>Course: " + course+ "<br>Grade: D";
+                } else if (marks >= 0 && marks < 50) {
+                    document.getElementById('result').innerHTML = "Registration Number: " + regno + "<br>Student Name: " + stdname + "<br>Semester: " + sem+ "<br>Course: "+ course+ "<br>Grade: FAIL";
+                } else {
+                    document.getElementById('result').innerHTML = "Invalid marks entered.";
+                }
+            }
+        </script>
+    </body>
+</html>

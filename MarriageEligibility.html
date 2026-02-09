@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Marriage Eligibility</title>
+        <style>
+            body {
+                font-size: 30px;
+                text-align: center;
+                padding: 20px;
+                margin-top: 370px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Marriage Eligibility</h1>
+        <script>
+            let checkEligibility = () => {
+                let age = prompt("Enter your age:");
+                let gender = prompt("Enter your gender:");
+
+                document.write("Age = " + age + "<br>");
+                document.write("Gender = " + gender + "<br><br>");
+
+                if (age >= 21 && (gender == 'Male' || gender == 'male')) {
+                    document.write("You are eligible to get married.");
+                } else if (age >= 18 && (gender == 'Female' || gender == 'female')) {
+                    document.write("You are eligible to get married.");
+                } else {
+                    document.write("You are not eligible to get married.");
+                }
+            };
+            checkEligibility();
+        </script>
+    </body>
+</html>

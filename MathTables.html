@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Math Tables</title>
+    </head>
+    <body>
+        <h1>Math Tables</h1>
+        <script>
+            //using ony for loop
+            for (let a = 1; a <= 10; a ++) {
+                document.write(`5 * 5^${a} = ${5 * (5**a)} <br>`);
+            }
+            document.write('<br>');
+
+            //using while loop
+            let i = 1;
+            while (i <= 10) {
+                document.write(`7 * 7^${i} = ${7 * (7**i)} <br>`);
+                i++;
+            }
+            document.write('<br>');
+
+            //using do while loop
+            let j = 1;
+            do {
+                document.write(`9 * 9^${j} = ${9 * (9**j)} <br>`);
+                j++;
+            } while (j <= 10);
+        </script>
+    </body>
+</html>

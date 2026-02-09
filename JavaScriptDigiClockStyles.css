@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+#clock {
+    text-align: center;
+    font-family: monospace;
+    color: red;
+    margin-top: -10px;
+    margin-bottom: -20px;
+}
+
+fieldset {
+    border: 1px solid red;
+    box-shadow: 2px 2px 200px red;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    padding-top: -20px;
+}

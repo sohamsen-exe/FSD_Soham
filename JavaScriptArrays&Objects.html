@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>JavaScript Arrays and Objects</title>
+        <style>
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JavaScript Arrays and Objects</h1>
+        <script>
+            let homo_array = [10, 20, 30, 40, 50];
+            document.write("Array Elements: " + homo_array + "<br><br>");
+
+            let hetero_array = [10, "Hello", true, 3.14];
+            document.write("Heterogeneous Array Elements: " + hetero_array + "<br><br>");
+
+            let student_det = [2411021240008, "Soham", 9.5, "Computer Applications", "Alliance University", "Anekal", "A+"];
+            document.write("Student Reg No: " + student_det[0] + "<br>");
+            document.write("Student Name: " + student_det[1] + "<br>");
+            document.write("Student CGPA: " + student_det[2] + "<br>");
+            document.write("Student Course: " + student_det[3] + "<br>");
+            document.write("Student University: " + student_det[4] + "<br>");
+            document.write("Student Location: " + student_det[5] + "<br>");
+            document.write("Student Grade: " + student_det[6] + "<br><br>");
+
+            let mobile = {1: "OnePlus", 2: "Black", 3: 30000, 4: "512GB", 5: "16GB RAM"};
+            mobile[1] = "Samsung";
+            document.write("Mobile: " + mobile[1] + "<br>");
+            document.write("Color: " + mobile[2] + "<br>");
+            document.write("Price: " + mobile[3] + "<br>");
+            document.write("Storage: " + mobile[4] + "<br>");
+            document.write("RAM: " + mobile[5] + "<br>");
+        </script>
+    </body>
+</html>

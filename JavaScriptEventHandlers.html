@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>JavaScript Event Handlers</title>
+        <link rel="stylesheet" href="EventHandlerStyles.css">
+    </head>
+    <body>
+        <fieldset>
+            <h1>JavaScript Event Handlers</h1>
+            <label>Username: </label>
+            <input type = 'text' id = 'username'>
+            <br><br>
+            <label>Password: </label>
+            <input type = 'password' id = 'password'>
+            <br><br>
+            <button onclick = "Event()">Login</button> 
+            <p id = 'result'></p>
+        </fieldset>
+        
+        <script>
+            function Event() {
+                // alert("Hello World");
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+
+                if (username == "Soham" && password == "123") {
+                    document.getElementById('result').innerHTML = "Logged in successfully!";
+                    // document.writeln("Logged in succesfully!");
+                } else {
+                    document.getElementById('result').innerHTML = "Login failed!";
+                    // document.writeln("Login failed!");
+                }
+            }
+        </script>
+    </body>
+</html>

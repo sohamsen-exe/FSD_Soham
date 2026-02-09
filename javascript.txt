@@ -1,0 +1,31 @@
+JAVA SCRIPT : rjs, ejs, njs ,vjs, ajs, .... 14+
+--------------------------------------------
+Brenden Eich - Creator - Netscape Coommunications (1995 - 1997) - made JS in 10 days.
+JS alternate names - Mocha, Live Script, Ecma Script, Type Script, JS
+Uses: We can create dynamic responses 
+
+JS Variables are of three types: var, let, and const
+var - old, values can be updated and declared again
+let - newer, values can only be updated
+const - constant, values are fixed on declaration
+
+JS Data Types: 
+Numbers, Strings, Char, Boolean, Float, Double, Long, Short
+
+REACT JS: Jordan Walke
+It is a framework/library of JS.
+It was created in 2011.
+Jordan Walke is currently a software engineer at Meta.
+Facebook(now Meta) wanted a more interactive interface for its website, that is why React.js was created.
+It was first implemented in 2013.
+It is used for building/constructing reusable components.
+It is also used for creating SPAs (Single Page Applications). Example: YouTube
+
+Props & State in REACT:
+    They are part of "Hook" concept in React. 
+    Props stands for Properties in React, it allows us to create multiple functions in a single .js file. 
+    React JSX or JavaScript XML, allows to link to functions together (Parent and Child functions). 
+    In JSX, customary tags are used instead of regular tags.
+
+    State in React - 
+

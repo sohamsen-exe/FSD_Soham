@@ -1,0 +1,254 @@
+<html> 
+    <head> 
+        <title>BCA Time Table</title> 
+        <style> 
+            body { 
+                font-family: Arial, Helvetica, sans-serif; 
+                background: #ffffff; 
+                padding: 20px; 
+            } 
+ 
+            h2 { 
+                text-align: center; 
+                margin-bottom: 15px; 
+                letter-spacing: 1px; 
+            } 
+ 
+            table { 
+                width: 100%; 
+                border-collapse: collapse; 
+                table-layout: fixed; 
+                font-size: 13px; 
+            } 
+ 
+            th, td { 
+                border: 1px solid #000; 
+                padding: 6px; 
+                text-align: center; 
+                vertical-align: middle; 
+            } 
+ 
+            thead th { 
+                font-weight: bold; 
+                background-color: #F2F2F2; 
+            } 
+ 
+            .session-time { 
+                font-size: 11px; 
+                font-weight: normal; 
+            } 
+ 
+            .subject { 
+                font-weight: bold; 
+            } 
+ 
+            .room { 
+                font-size: 11px; 
+                color: #444; 
+            } 
+ 
+            .lunch { 
+                font-weight: bold; 
+                background-color: #f2f2f2; 
+            } 
+ 
+            .narrow { 
+                width: 60px; 
+            } 
+ 
+            .medium { 
+                width: 110px; 
+            } 
+ 
+            .wide { 
+                width: 130px; 
+            } 
+        </style> 
+    </head> 
+    <body> 
+ 
+    <h2>BCA TIME TABLE</h2> 
+ 
+    <table> 
+        <thead> 
+            <tr> 
+                <th class="narrow">Sl.No</th> 
+                <th class="medium">Date</th> 
+                <th class="medium">Day</th> 
+ 
+                <th class="wide"> 
+                    Session 1<br> 
+                    <label class="session-time">08:00 - 08:55</label> 
+                </th> 
+                <th class="wide"> 
+                    Session 2<br> 
+                    <label class="session-time">09:00 - 09:55</label> 
+                </th> 
+                <th class="wide"> 
+                    Session 3<br> 
+                    <label class="session-time">10:00 - 10:55</label> 
+                </th> 
+                <th class="wide"> 
+                    Session 4<br> 
+                    <label class="session-time">11:05 - 12:00</label> 
+                </th> 
+                <th class="wide"> 
+                    Session 5<br> 
+                    <label class="session-time">12:05 - 13:00</label> 
+                </th> 
+                <th class="wide"> 
+                    Session 6<br> 
+                    <label class="session-time">13:00 - 14:00</label> 
+                </th> 
+                <th class="wide"> 
+                    Session 7<br> 
+                    <label class="session-time">14:10 - 15:05</label> 
+                </th> 
+            </tr> 
+        </thead> 
+ 
+        <tbody> 
+            <tr> 
+                <td>1</td> 
+                <td>05/01/2026</td> 
+                <td>Monday</td> 
+ 
+                <td> 
+                    <div class="subject">FSD (V-RKV)</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td> 
+                    <div class="subject">VI</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td></td> 
+                <td> 
+                    <div class="subject">DWM</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td> 
+                    <div class="subject">NLP (V-NIG)</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td rowspan="5" class="lunch">LUNCH<br>BREAK</td> 
+                <td> 
+                    <div class="subject">AI (V-ABH)</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+            </tr> 
+ 
+            <tr> 
+                <td>2</td> 
+                <td>06/01/2026</td> 
+                <td>Tuesday</td> 
+ 
+                <td></td> 
+                <td> 
+                    <div class="subject">VI</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td> 
+                    <div class="subject">SE (V-RKV)</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td> 
+                    <div class="subject">CC (V-LAD)</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td> 
+                    <div class="subject">DWM</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td> 
+                    <div class="subject">AI (V-ABH)</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+            </tr> 
+ 
+            <tr> 
+                <td>3</td> 
+                <td>07/01/2026</td> 
+                <td>Wednesday</td> 
+ 
+                <td> 
+                    <div class="subject">SE (V-RKV)</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td> 
+                    <div class="subject">FSD (V-RKV)</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td></td> 
+                <td> 
+                    <div class="subject">DWM</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td> 
+                    <div class="subject">NLP (V-NIG)</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td> 
+                    <div class="subject">AI (V-ABH)</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+            </tr> 
+ 
+            <tr> 
+                <td>4</td> 
+                <td>08/01/2026</td> 
+                <td>Thursday</td> 
+ 
+                <td> 
+                    <div class="subject">VI</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td> 
+                    <div class="subject">FSD (V-RKV)</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td></td> 
+                <td> 
+                    <div class="subject">DWM</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td> 
+                    <div class="subject">NLP (V-NIG)</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td> 
+                    <div class="subject">AI (V-ABH)</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+            </tr> 
+ 
+            <tr> 
+                <td>5</td> 
+                <td>09/01/2026</td> 
+                <td>Friday</td> 
+ 
+                <td> 
+                    <div class="subject">SE (V-RKV)</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td></td> 
+                <td> 
+                    <div class="subject">FSD (V-RKV)</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td> 
+                    <div class="subject">NLP (V-NIG)</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td> 
+                    <div class="subject">VI</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+                <td> 
+                    <div class="subject">CC (V-LAD)</div> 
+                    <div class="room">LT 502</div> 
+                </td> 
+            </tr> 
+        </tbody> 
+    </table> 
+    </body> 
+</html>

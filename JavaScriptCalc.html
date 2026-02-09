@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Calculator using JS</title>
+        <style>
+            body {
+                font-size: 30px;
+                text-align: center;
+                padding: 20px;
+                margin-top: 370px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Calculator using JS Functions</h1>
+        <script>
+            let add = (a, b) => {
+                return a + b;
+            }
+            let subtract = (a, b) => {
+                return a - b;
+            }
+            let multiply = (a, b) => {
+                return a * b;
+            }
+            let divide = (a, b) => {
+                if (b !== 0) {
+                    return a / b;
+                } else {
+                    return "<br>" + "Error: Division by zero";
+                }
+            }
+            let modulus = (a, b) => {
+                return a % b;
+            }
+
+            let num1 = Number(prompt("Enter the first number:"));
+            let num2 = Number(prompt("Enter the second number:"));
+            let operation = prompt("Enter the operation (+, -, *, /, %):");
+
+            document.write('First Number = ' + num1 + '<br>');
+            document.write('Second Number = ' + num2 + '<br>');
+            document.write('Operation = ' + operation + '<br>');
+            document.write('<br>');
+            let result;
+            switch (operation) {
+                case '+':
+                    result = add(num1, num2);
+                    document.write('Result: ' + result);
+                    break;
+                case '-':
+                    result = subtract(num1, num2);
+                    document.write('Result: ' + result);
+                    break;
+                case '*':
+                    result = multiply(num1, num2);
+                    document.write('Result: ' + result);
+                    break;
+                case '/':
+                    result = divide(num1, num2);
+                    document.write('Result: ' + result);
+                    break;
+                case '%':
+                    result = modulus(num1, num2);
+                    document.write('Result: ' + result);
+                    break;
+                case null:
+                    result = "No operation entered";
+                    document.write('Result: ' + result);
+                    break;
+                default:
+                    result = "Invalid operation";
+            }
+        </script>
+    </body>
+</html>

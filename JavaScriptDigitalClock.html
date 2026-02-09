@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Digital Clock</title>
+        <link rel="stylesheet" href="./JavaScriptDigiClockStyles.css">
+    </head>
+    <body>
+        <fieldset>
+            <p id = "clock"></p>
+
+            <script>
+                function Time() {
+                    let now = new Date();
+                    let hrs = now.getHours();
+                    let min = now.getMinutes();
+                    let sec = now.getSeconds();
+                    let milis = now.getMilliseconds();
+                    
+                    if (hrs < 10) {
+                        hrs = "0" + hrs;
+                    }
+                    if (min < 10) {
+                        min = "0" + min;
+                    }
+                    if (sec < 10) {
+                        sec = "0" + sec;
+                    }
+
+                    let digital = hrs + ":" + min + ":" + sec;
+                    document.getElementById("clock").textContent = digital;
+                }
+                Time();
+                setInterval(Time, 1000);
+            </script>
+        </fieldset>
+    </body>
+</html>
